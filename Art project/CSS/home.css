@@ -1,0 +1,385 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px; 
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    margin: 0 auto;
+}
+h2{
+    color: brown;
+}
+p{
+    font-size: 25px;
+    padding: 10px 200px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+nav{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* INSIDE HEADER */
+.back{
+    background-image: url(../HTML/school.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+}
+header{
+    border-bottom: 2px solid brown  ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 112px;
+
+}
+/* MEDIA QUERY */
+@media (min-width: 300px) {
+    .back{
+       display: block;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        font-size: small;
+    }
+}    
+@media (max-width: 1200px) {
+    nav{
+        display:flex;
+        align-items: center;
+        font-size: small;
+    }
+    nav img{
+        display: block;
+    }
+    nav h1{
+        width: 100%;
+        display:inline;
+    }
+}
+
+nav #icon{
+    cursor: pointer ;
+    margin-left: 0;
+    float: right;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li a:hover{
+    color:brown;
+    padding: 20px;
+    transition: all 2s linear;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px 10px; 
+    color:rgb(197, 94, 94);
+    font-size: 25px;
+    text-transform: uppercase;
+}
+nav h1{
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bolder;
+    color: brown;
+    text-shadow: 0 0 10px gray,
+                0 0 20px gray,
+                0 0 40px gray,
+                0 0 80px gray,
+                0 0 120px gray;
+    animation: fade-inout 0.5s infinite alternate;
+    
+}
+@keyframes fade-inout{
+    0% { opacity:1; }
+    100%{ opacity:0;}
+}
+
+.fast{
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.fast h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: left;
+    color: rgb(25, 5, 245);
+}
+nav img{
+    height: 50px;
+}
+.location{
+    width: 12cm;
+    height: 1cm ;
+    border-radius: 15px;
+    border-color: blue; 
+}
+.fast h1 span{
+    color: brown;
+    font-family: cursive;
+}
+.tuition{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+#blank{
+    font-size: 25px;
+    padding: 10px 200px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.top p a{
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+}
+.top p a:hover{
+    background-color: chocolate;
+}
+footer{
+    width: 100%;
+    background-color: brown;
+    color: black;
+    text-align: center;
+    height: 50px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+/* ABOUT CSS */
+@media (max-width: 1000px) {
+    nav{
+        display: block;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        font-size: small;
+    }
+    nav img{
+        display: block;
+    }
+    nav h1{
+        width: 100%;
+        display:inline;
+    }
+}
+.abo{
+    padding: 10px 200px;
+}
+.abo h1{
+    color: brown;
+    text-align: center;
+}
+.abo p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.abo #abo p{
+    font-weight: lighter;
+}
+.abo .me p{
+    font-weight: lighter;
+}
+.abo .last p{
+    font-weight: lighter;
+}
+footer{
+    width: 100%;
+    background-color: brown;
+    color: black;
+    text-align: center;
+    height: 50px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.top p a{
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+}
+.top p a:hover{
+    background-color: chocolate;
+}
+
+/* ACADEMICS CSS */
+@media (max-width: 1000px) {
+    nav{
+        display: block;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        font-size: small;
+    }
+    nav img{
+        display: block;
+    }
+    nav h1{
+        width: 100%;
+        display:inline;
+    }
+}
+.enroll{
+    text-align: center;
+}
+.enroll h1{
+    color: brown;
+}
+.enroll p{
+    font-size: 25px;
+    padding: 10px 200px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#all{
+    padding: 10px 200px;
+}
+
+#all .first h3{
+    color: brown;
+}
+.form{
+    padding: 10px 300px;
+}
+.form form{
+    background-color: rgb(209, 169, 118);
+    padding-bottom: 5%;
+}
+.form h1{
+    text-align: center;
+    color: brown;
+}
+.form .first{
+    width: 40%;
+    height: 30px;
+    margin-left: 60px ;
+}
+.form .tel{
+    width: 88%;
+    height: 30px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.form h3{
+    margin-left: 60px;
+    color: brown;
+}
+.form .but{
+    margin-left: 60px;
+}
+.form button{
+    margin-left: 60px;
+    width: 3cm;
+    height: 40px;
+    font-size: 25px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+/* PARENT CSS */
+@media (max-width: 1000px) {
+    nav{
+        display: block;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        font-size: small;
+    }
+    nav img{
+        display: block;
+    }
+    nav h1{
+        width: 100%;
+        display:inline;
+    }
+}
+.fast{
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: center;
+    align-items: center;
+}
+.fast h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: left;color: rgb(25, 5, 245);
+}
+.fast h1 span{
+    color: brown;
+    font-family: cursive;
+}
+#par h1{
+    color: brown;
+    text-align: center;
+}
+#par p{
+    font-size: 25px;
+    padding: 10px 200px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#left,#par{
+    width: 1200px;
+    margin: 0 auto;
+}
+#left{
+    text-align: left;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+#left .involve , .hhh{
+    flex: 1;
+}
+#left h1{
+    color: brown;
+    text-align: center;
+} 
+#left p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-right:10%;
+}
+#left .div p{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.top p a{
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+}
+.top p a:hover{
+    background-color: chocolate;
+}
